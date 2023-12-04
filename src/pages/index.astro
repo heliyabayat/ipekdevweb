@@ -1,0 +1,36 @@
+---
+import Footer from "../components/Footer.astro";
+import Navbar from "../components/Navbar.astro";
+import Projects from "../components/home/Projects.astro";
+import About from "../components/home/About.astro";
+import Intro from "../components/home/Intro.astro";
+---
+
+<html lang="en" dir="ltr" data-theme="dark">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>IpekDev Co.</title>
+    <meta name="description" content="software development solutions" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <Navbar />
+    <Intro />
+    <About />
+    <Projects />
+    <Footer />
+  </body>
+</html>
+
+<style>
+  .mockup-browser .mockup-browser-toolbar .input {
+    width: 12rem !important;
+  }
+</style>
