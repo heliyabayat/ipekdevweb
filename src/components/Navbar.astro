@@ -10,7 +10,7 @@ import Menu from "./Menu.astro";
     id="navbar"
     class="navbar lg:rounded-xl backdrop-blur-md px-4 py-4 transition-all ease-in-out duration-300"
   >
-    <div class="navbar-start">
+    <div class="navbar-start w-auto">
       <div class="dropdown">
         <label tabindex="0" class="btn btn-ghost lg:hidden">
           <svg
@@ -28,7 +28,7 @@ import Menu from "./Menu.astro";
         </label>
         <ul
           tabindex="0"
-          class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-neutral-700 rounded-box w-52"
+          class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-white rounded-box w-52"
         >
           <Menu />
         </ul>
@@ -58,7 +58,9 @@ import Menu from "./Menu.astro";
         <Menu />
       </ul>
     </div>
-    <div class="navbar-end flex"></div>
+    <div class="navbar-end flex flex-grow justify-end">
+      <a href="" class="btn btn-primary">Contact Us</a>
+    </div>
   </div>
 </header>
 
